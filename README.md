@@ -19,7 +19,7 @@ For a complete list of commands, use `/about` or `/modhelp` within your server. 
 ## How to Add Rune Bot to Your Server
 1. Use the [invite link](https://discord.com/oauth2/authorize?client_id=1285116010822893579).
 2. Ensure the bot has the necessary permissions to function correctly, including Manage Roles, Manage Channels, and Administrator permissions.
-3. Consult [Setup]() for more details.
+3. Consult [Setup](https://github.com/xanzinfl/Rune/blob/main/SETUP.md) for more details.
 
 ## Getting Help
 If you need assistance with Rune Guardian or want to learn more about its features, join the [Support Server](https://discord.gg/422p3anb3T).
