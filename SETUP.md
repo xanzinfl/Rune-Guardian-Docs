@@ -131,5 +131,5 @@ These commands have cooldowns to prevent spam, and roles should be configured in
 ## Step 9: More Information and Help
 You can use `/modhelp` and `/about` within your server for basic info.
 
-If you need additional support or guidance, contact one of the developers.
+If you need additional support or guidance, contact one of the [developers](https://linktr.ee/Rune.gg).
 

@@ -56,11 +56,11 @@ A comprehensive list of commands for Rune Gaurdian, including descriptions and u
     - Requires Administrator.
 
 ## Fun Commands
-- **!drinktime**: Announces a drinking break in the server.
+- **!drinktime**: pings drinktime role with a message.
   - Cooldown: 1 Hour
-- **!sesh**: Starts or manages a session (e.g., a gaming session).
+- **!sesh**: pings sesh role with a message.
   - Cooldown: 1 Hour
-- **!chatrevive**: 
+- **!chatrevive**: pings chat revive role with a message.
   - Cooldown: 45 Minutes
 
 - **/troll**: Drags a user between two voice channels.
@@ -131,4 +131,4 @@ A comprehensive list of commands for Rune Gaurdian, including descriptions and u
 
 ---
 
-This list provides all available commands for Rune Bot, along with their descriptions and required options. Use this as a reference to make the most out of Rune Bot’s functionality!
+This list provides all available commands for Rune Guardian, along with their descriptions and required options. Use this as a reference to make the most out of Rune Guardian’s functionality!
