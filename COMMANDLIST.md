@@ -1,6 +1,6 @@
 # Rune Bot Command List
 
-A comprehensive list of commands for Rune Gaurdian, including descriptions and usage.
+A comprehensive list of commands for Rune Guardian, including descriptions and usage.
 
 ## General Commands
 - **/about**: Displays information about the bot.
