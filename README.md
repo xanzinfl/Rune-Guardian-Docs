@@ -25,7 +25,5 @@ For a complete list of commands, use `/about` or `/modhelp` within your server. 
 If you need assistance with Rune Guardian or want to learn more about its features, join the [Support Server](https://discord.gg/422p3anb3T).
 Or, [Contact Us](https://linktr.ee/Rune.gg)
 
-You can also check our system status [here](https://immortal-poodle-electric.ngrok-free.app/status/rune)
-
 ## Terms of Service
 By using Rune Guardian, you agree to comply with its terms of service and community guidelines.
