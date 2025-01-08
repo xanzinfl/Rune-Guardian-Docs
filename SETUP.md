@@ -1,135 +1,223 @@
-# Rune Guardian Setup Guide
+## Setup Guide for Rune Guardian
 
-Welcome to the Rune Guardian Setup Guide! Follow these instructions to configure Rune Guardian and make the most of its features.
+This guide walks through setting up and configuring Rune Guardian Bot in your Discord server. Follow these steps to configure various features and make the most of your bot!
 
-## Step 1: Add Rune Guardian to Your Server
-1. **Invite the Bot**: Use the [invite link](https://discord.com/oauth2/authorize?client_id=1285116010822893579) to add Rune Bot to your server.
+### 1. **Basic Setup**
+
+Start by using `/setup` to get an overview of the available configuration commands and ensure the bot has all required permissions to perform its functions.
+
+This command will display a list of configuration commands and a link to the setup documentation.
+**Note**: The bot may not work properly if this command isnt run
 
 ---
 
-## Step 2: Configuring Server Settings Using `/updatesettings`
+### 2. **Auto Role Setup**
 
-Rune Bot’s functionality is highly customizable. Use `/updatesettings` to configure essential settings, logging channels, role assignments, and more. **Many features depend on setting specific values using this command.** Here’s a breakdown of each setting and its purpose:
+Set up automatic role assignment for new members.
 
-### Logging Channels
-Configure specific channels for Rune Guardian’s logs:
-- **Moderation Log Channel ID**: Logs actions like bans, kicks, and timeouts.
-- **Call Log Channel ID**: Logs call join and leave events.
-- **Member Log Channel ID**: Logs member joins and leaves, aswell as server events.
-- **Role Log Channel ID**: Logs role updates.
-- **Message Log Channel ID**: Logs message edits and deletions, aswell as reactions.
-- **Channel Log Channel ID**: Logs channel updates.
-- **Ticket Channel ID**: Sets the destination for the "Create a Ticket" button in the welcome message.
+**Commands**:
+1. **Set Auto Role**: Automatically assign a role to new members.
+   ```usage
+   /autorole set role:@RoleName
+   ```
+2. **Remove Auto Role**: Remove the auto-role assignment.
+   ```usage
+   /autorole remove
+   ```
 
-**Example Usage**:
-```bash
-/updatesettings setting:ModerationLogChannelId value:#moderation-logs
+---
+
+### 3. **Moderation Commands**
+
+Moderate your server with commands to ban, kick, and timeout users.
+
+**Commands**:
+- **Ban Member**:
+   ```plaintext
+   /ban user:@User reason:"Reason for the ban" image: (optional)
+   ```
+- **Unban Member**:
+   ```plaintext
+   /unban user:"User ID" reason:"Optional reason"
+   ```
+- **Kick Member**:
+   ```plaintext
+   /kick user:@User reason:"Reason for the kick" image: (optional)
+   ```
+- **Timeout Member**:
+   ```plaintext
+   /timeout user:@User duration:<Choose duration> reason:"Reason for timeout" image: (optional)
+   ```
+
+- **Warn Member**:
+   ```usage
+   /warn user:@User reason:"Reason for warning" image: (optional)
+   ```
+
+**Note** the bot sends the punished user a message 
+```example
+You have been timed out in [Server Name] for the following reason: [reason].
 ```
 
-### Role Settings
-Specify roles that are used in certain bot functionalities:
-- **Verified Role ID**: The role given to verified members.
-- **Admin Role ID**: The role for server admins (required for certain moderation commands).
-- **Moderator Role ID**: The role for moderators (required for some moderation commands).
-- **Sesh Role ID**: The role to ping during `!sesh`.
-- **Chat Revive Role ID**: The role to ping during `!chatrevive`.
-- **Drink Time Role ID**: The role to ping during `!drinktime`.
+---
 
-**Example Usage**:
-```bash
-/updatesettings setting:Verified_ROLE_ID value:@Verified
+### 4. **Counting System**
+
+Set up a counting channel for users to participate in counting.
+
+- **Set Counting Channel**:
+   ```usage
+   /setcountingchannel channel:#ChannelName
+   ```
+
+---
+
+### 5. **Member Count System**
+
+- **Configure Member Count System**:
+   - Configure settings for displaying member counts, verified roles, and other member-related settings.
+   ```usage
+   /membercountconfig verified_role:"Verified Role ID" eighteen_plus_role:"18+ Role ID" embed_channel:#EmbedChannel voice_channel:#VoiceChannel
+   ```
+- **Manually update the counts**
+   ```usage
+   /updatecountembed
+   /updatecountvc
+   ```
+---
+
+### 6. **Welcome System Configuration**
+
+Customize the welcome messages.
+
+**Commands**:
+- **Configure Welcome Settings**:
+   ```usage
+   /welcomeconfig ticket_channel:#TicketChannel ban_appeal:"Ban Appeal Link" staff_app:"Staff Application Link" staff_report:"Staff Report Link" welcome_message:"Welcome to our server!" welcome_dm_message:"Welcome DM text" welcome_dm_message_2:"Additional DM text" welcome_channel:#WelcomeChannel
+   ```
+**Note**: The links and ticket channel id are for buttons under the second welcome message
+
+---
+
+### 7. **Log Channels Setup**
+
+Specify channels for different types of logs such as moderation actions, member joins/leaves, and message edits/deletes.
+
+**Commands**:
+- **Set Log Channels**:
+   ```plaintext
+   /setlogchannel moderation_log:#ModerationLog call_log:#CallLog member_log:#MemberLog role_log:#RoleLog message_log:#MessageLog channel_log:#ChannelLog all_log_channel:#GeneralLogChannel
+   ```
+
+---
+
+### 8. **Feedback System**
+
+Set up a feedback channel for server-related feedback and enable bot-related feedback to be sent to our support server.
+
+**Commands**:
+1. **Set Feedback Channel**:
+   ```plaintext
+   /setfeedbackchannel channel:#FeedbackChannel
+   ```
+2. **Send Feedback**:
+   ```plaintext
+   /feedback type:<server or bot> message:"Your feedback message"
+   ```
+
+---
+
+### 9. **Role Configuration**
+
+Configure special roles for admin, moderator, verified members, and additional roles like the sesh or drink role.
+
+**Command**:
+```plaintext
+/configureroles slashverify_role:@Role admin_role:@Role moderator_role:@Role sesh_role:@Role chatrevive_role:@Role drink_role:@Role
 ```
 
-### Welcome Messages and Customization
-Customize the welcome messages sent to new members:
-- **Welcome Channel ID**: Channel where the bot will send welcome messages.
-- **Welcome DM Message**: Custom DM message sent to new members. You can mention the member by using `{user}` in the message.
-- **Welcome DM Message 2**: A follow-up DM message for new members.
-- **Welcome Message**: The message posted in the designated welcome channel.
+---
 
-#### Welcome Message 2 Buttons
-- **Ban Appeal Link**: Link for members to appeal bans, accessible as a button in the 2nd welcome DM.
-- **Staff Application Link**: Link for staff applications, accessible as a button in the 2nd welcome DM.
-- **Staff Report Link**: Link for staff reports, accessible as a button in the 2nd welcome DM.
+### 10. **AFK Channel Setup**
 
-**Example Usage**:
-```bash
-/updatesettings setting:Welcome_DM_MSG value:Welcome {user} to our server! We’re glad to have you.
-/updatesettings setting:BAN_APPEAL value:https://example.com/ban-appeal
-/updatesettings setting:STAFF_APP value:https://example.com/staff-application
-/updatesettings setting:STAFF_REPORT value:https://example.com/staff-report
-/updatesettings setting:TicketChannelId value:#support
+Define an AFK channel to exclude from voice activity tracking.
+
+**Command**:
+```plaintext
+/setafkchannel channel:#AFKChannel
 ```
 
-### Miscellaneous Settings
-- **Embed Channel ID**: Used for count embed.
-- **Voice Channel ID**: Used for shwoing the member count in a voice channel.
+---
 
-**Note**: If these settings aren’t configured, certain commands or features may not work as intended.
+### 11. **Embed Messaging**
+
+Send rich embed messages with customizable options like title, color, footer, images, and author details.
+
+**Command**:
+```plaintext
+/sendembed message:"Your main message" title:"Title" color:"#3498db" footer:"Footer text" image:"Image URL" thumbnail:"Thumbnail URL" author:"Author Name" author_icon:"Author Icon URL"
+```
 
 ---
 
-## Step 3: Enable Auto Role Assignment
-If you want new members to be automatically assigned a role upon joining, you can enable the autorole feature:
+### 12. **Leaderboard and XP System**
 
-1. Use the command `/autorole set [role]` to specify the role that should be assigned automatically.
-   - Example: `/autorole set role:@NewMember`
-2. To remove autorole, use `/autorole remove`.
-
----
-
-## Step 4: Using the XP System and Leaderboards
-Rune Bot can track user activity and provide an XP leaderboard based on text and voice activity.
-
-1. **Check a User's Level**: Use `/level [user]` to display the XP level of a specified user.
-2. **View the Leaderboard**: Use `/top [type]` to display a leaderboard for either text or voice activity.
-
-**Note**: XP gain has rate-limiting to prevent spam and ensure fair tracking.
-
----
-
-## Step 5: Configure the AFK Channel for Voice XP Exclusion
-Set up a dedicated AFK channel where users won’t accumulate voice XP, ensuring XP is only tracked in active voice channels.
-
-1. Use `/setafkchannel [channel]` to designate the AFK channel.
-   - Example: `/setafkchannel channel:#afk`
+**Commands**:
+- **Check Level**:
+   ```plaintext
+   /level user:@User (optional)
+   ```
+- **View Top Leaderboard**:
+   ```plaintext
+   /top type:<text or voice>
+   ```
+- **Reset Leaderboard**:
+   ```plaintext
+   /resetleaderboard type:<text, voice, or all>
+   ```
 
 ---
 
-## Step 6: Using Moderation Commands
-Rune Bot provides a suite of moderation commands. These commands require moderator or admin permissions, depending on your role setup.
+### 13. **Server Information and Verification**
 
-- **Ban a Member**: `/ban [user] [reason] [image]` - Bans a specified user with a reason.
-- **Kick a Member**: `/kick [user] [reason] [image]` - Kicks a specified user with a reason.
-- **Timeout a Member**: `/timeout [user] [duration] [image]` - Temporarily mutes a member.
-- **Warn a Member**: `/warn [user] [reason] [image]` - Issues a warning to a user.
-
-**Note**: These commands DM the user with the [reason] input.
-
-These commands require specific log channels and roles to be set up using `/updatesettings` for proper functionality.
-
----
-
-## Step 7: Set Up Counting Channel
-Rune Bot includes a counting game that can be set up in any designated channel.
-
-1. Use `/setcountingchannel [channel]` to assign the channel where the counting game will take place.
-   - Example: `/setcountingchannel channel:#counting`
+**Commands**:
+- **Display Server Information**:
+   ```plaintext
+   /serverinfo
+   ```
+- **Set Server Information**:
+   ```plaintext
+   /setserverinfo info:"Description or information about the server"
+   ```
+- **Verify Member**:
+   ```plaintext
+   /verifymember user:@User
+   ```
 
 ---
 
-## Step 8: Configure Engagement Commands
+### 14. **Show Current Configuration**
 
-- **Chat Revive**: `!chatrevive` -
-- **Drink Time**: `!drinktime` - Announces a drinking break.
-- **Sesh Command**: `!sesh` - Pings the designated session role for group activities.
-  
-These commands have cooldowns to prevent spam, and roles should be configured in `/updatesettings` for functionality.
+Use this command to view all currently configured settings for your guild.
+
+**Command**:
+```plaintext
+/showconfig
+```
+
+This displays a summary of all active configuration settings in your guild.
 
 ---
 
-## Step 9: More Information and Help
-You can use `/modhelp` and `/about` within your server for basic info.
+### 15. **Help Command**
 
-If you need additional support or guidance, contact one of the [developers](https://linktr.ee/Rune.gg).
+If you need help with any specific command, use `/help` followed by the command name.
 
+**Command**:
+```plaintext
+/help command:<command_name>
+```
+
+---
+
+This setup guide should help you get all the necessary configurations in place. For further assistance [Contact Us](https://linktr.ee/Rune.gg).

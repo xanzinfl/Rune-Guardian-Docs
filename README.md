@@ -16,15 +16,16 @@ For a complete list of commands, use `/about` or `/modhelp` within your server. 
 - **XP & Leaderboards**: `/level` to check levels and `/top` to view leaderboards.
 - **Fun & Engagement**: `/troll`, `/drinktime`, `/chatrevive`, and more.
 
-## How to Add Rune Bot to Your Server
+## Adding Rune Guardian to Your Server
 1. Use the [invite link](https://discord.com/oauth2/authorize?client_id=1285116010822893579).
-2. Ensure the bot has the necessary permissions to function correctly, including Manage Roles, Manage Channels, and Administrator permissions.
+2. Ensure the bot has Administrator permissions.
 3. Consult [Setup](https://github.com/xanzinfl/Rune/blob/main/SETUP.md) for more details.
 
 ## Getting Help
 If you need assistance with Rune Guardian or want to learn more about its features, join the [Support Server](https://discord.gg/422p3anb3T).
 Or, [Contact Us](https://linktr.ee/Rune.gg)
 
+You can also check our system status [here](https://immortal-poodle-electric.ngrok-free.app/status/rune)
+
 ## Terms of Service
 By using Rune Guardian, you agree to comply with its terms of service and community guidelines.
-

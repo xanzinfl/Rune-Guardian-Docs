@@ -4,6 +4,69 @@ All notable changes to Rune Guardian will be documented here.
 
 ---
 
+## [1.3.2] - 2025-1-7
+### Added
+- **Commands**
+  - `/setserverinfo`: Sets the server information.
+  - `/serverinfo, !serverinfo`: Displays the server information.
+  - `/setup`: Shows the setup guide.
+  - `/verifymember`: Gives the sepcified user the `slashverifyRoleID` Role
+  - `/membercountconfig`: Setting related to the member count embed and vc
+  - `/setlogchannel`: Allows you to set various channels for logging
+  - `/configureroles`: Here you can setup roles the bot needs for permissions checks or other commands eg. `/verifymember`
+  - `/welcomeconfig`: Allows you to configure various welcome message options
+  - `/showconfig`: Shows the servers currents settings
+  - `/help`: Intuitive help command that shows all avaiable commands and thier usage
+  - `/feedback`: Allows you to send feedback to a server or to my support server for bot-related issues
+  - `/setfeedbackchannel`: Sets the servers feedback channel
+  - `/roll`: Rolls dice (Also works with `!roll`)
+  - `/reminder`: Allows you to set reminders (Note this feature is still buggy)
+  - `/removepunishment`: Removes a punishment from a users history
+  - `/punishmenthistory`: Displays punishment history for a user
+  - `/reset_user_xp`: Resets a specific members xp
+  - `/restart`: Restarts the bot (Restricted to developers)
+
+- **Backend**
+  - Added several statuses that cycle every 15 seconds
+  - Internal Uptime Monitoring
+  - Added logging for dms sent from members
+  - Added a feature for the bot to send changelogs to the support server
+  - Added shutdown logging
+
+- **General featrues**
+  - Added punishment database
+
+
+### Updates
+- **Commands**
+  - `/sendembed`: Added `title` `color` `footer` `image` `thumbnail` `author` and `author_icon`
+  - `/top`: Updated to display different names for different leaderboards, Updated to show the requesters rank seperately if they arent within the top 10
+  - `/showconfig`: Fixed the message not sending if the config is too long
+
+- **Misc**
+  - Updated several logging embed colors for a more uniform look
+  - Fixed user levels not updating from 1
+
+- **Backend**
+  - Changed error logging to send to a channel 
+  - Fixed ExpectedConstraintError in GuildMemberRemove.js
+  - Restructured the way slashcommands are registered, they are now defined within the command file instead of index.js
+  - Updated leaderboards to use lifetime xp instead of current level xp
+  - Fixed errors from servers not having one or more welcome messages set
+
+- **Database**
+  - Moved mongodb to a cloud server instead of a local instance
+  - Changed `VerifiedRoleID` to `slashverifyRoleID`
+  - Reset Server leaderboards
+
+
+### Deprecated
+- **Commands**
+  - `/setadminrole`
+  - `/setmoderatorrole`
+  - `/updatesettings`
+---
+
 ## [1.3.0] - 2024-11-11
 ### Added
 - **Commands**
