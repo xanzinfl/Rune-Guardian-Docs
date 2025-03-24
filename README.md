@@ -10,7 +10,7 @@ Rune Guardian is a versatile Discord bot that offers features for server managem
 - **Engagement Commands**: Fun commands like `troll`, `!sesh`, and `!drinktime` keep your community entertained.
 
 ## Commands
-For a complete list of commands, use `/about` or `/modhelp` within your server. Some popular commands include:
+For a complete list of commands, use `/help` or `/modhelp` within your server. Some popular commands include:
 - **Moderation**: `/ban`, `/kick`, `/warn`, `/timeout`
 - **Logging**: Automatically logs events such as message deletions, channel updates, and member activities.
 - **XP & Leaderboards**: `/level` to check levels and `/top` to view leaderboards.
