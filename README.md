@@ -26,4 +26,7 @@ If you need assistance with Rune Guardian or want to learn more about its featur
 Or, [Contact Us](https://linktr.ee/Rune.gg)
 
 ## Terms of Service
-By using Rune Guardian, you agree to comply with its terms of service and community guidelines.
+By using Rune Guardian, you agree to comply with its terms of service and community guidelines found [here](https://github.com/xanzinfl/Rune-Guardian-Docs/blob/main/TermsOfService.md).
+
+## Privacy
+For inforamtion on what data we collect and how we use it check out our [Privacy Policy](https://github.com/xanzinfl/Rune-Guardian-Docs/blob/main/PrivacyPolicy.md)
