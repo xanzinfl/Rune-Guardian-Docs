@@ -1,13 +1,12 @@
 ## Setup Guide for Rune Guardian
 
-This guide walks through setting up and configuring Rune Guardian Bot in your Discord server. Follow these steps to configure various features and make the most of your bot!
+This guide walks through setting up and configuring Rune Guardian in your Discord server. Follow these steps to configure various features and make the most of our bot!
 
 ### 1. **Basic Setup**
 
 Start by using `/setup` to get an overview of the available configuration commands and ensure the bot has all required permissions to perform its functions.
 
 This command will display a list of configuration commands and a link to the setup documentation.
-**Note**: The bot may not work properly if this command isnt run
 
 ---
 
@@ -26,38 +25,46 @@ Set up automatic role assignment for new members.
    ```
 
 ---
+Here’s a **Setup Guide** section specifically for your **Ticket System**, formatted to match the rest of your Rune Guardian setup documentation:
 
-### 3. **Moderation Commands**
+---
 
-Moderate your server with commands to ban, kick, and timeout users.
+### 3. **Ticket System Setup**
 
-**Commands**:
-- **Ban Member**:
-   ```plaintext
-   /ban user:@User reason:"Reason for the ban" image: (optional)
-   ```
-- **Unban Member**:
-   ```plaintext
-   /unban user:"User ID" reason:"Optional reason"
-   ```
-- **Kick Member**:
-   ```plaintext
-   /kick user:@User reason:"Reason for the kick" image: (optional)
-   ```
-- **Timeout Member**:
-   ```plaintext
-   /timeout user:@User duration:<Choose duration> reason:"Reason for timeout" image: (optional)
-   ```
+Create a fully customizable ticket panel to help members open tickets based on categories you define.
 
-- **Warn Member**:
-   ```usage
-   /warn user:@User reason:"Reason for warning" image: (optional)
-   ```
+**Command**:
 
-**Note** the bot sends the punished user a message 
-```example
-You have been timed out in [Server Name] for the following reason: [reason].
+```plaintext
+/create-ticket-panel
 ```
+
+**Parameters**:
+
+| Option                             | Description                                                                  
+| ---------------------------------  | ---------------------------------------------------------------------------- 
+| `transcripts_channel`              | The **text channel** where transcripts and logs should be sent.              
+| `open_category`                    | The **category ID** where active tickets will be created.                    
+| `closed_category`                  | The **category ID** where closed tickets will be moved.                      
+| `ticket1_name`                     | The name of the **first ticket type** (e.g., "Support").                     
+| `ticket1_description`              | Description of the **first ticket type** (e.g., "Get help with a problem."). 
+| `ticket2_name` *(optional)*        | Name of a **second ticket type** (e.g., "Ban Appeal").                       
+| `ticket2_description` *(optional)* | Description for the second ticket type.                                      
+
+**Example Usage**:
+
+```plaintext
+/create-ticket-panel
+transcripts_channel: #ticket-logs
+open_category: 123456789012345678
+closed_category: 234567890123456789
+ticket1_name: Support
+ticket1_description: Need help with something? Open a ticket!
+ticket2_name: Ban Appeal
+ticket2_description: Submit your appeal for review.
+```
+
+⚠️ *Make sure the bot has permission to manage channels and messages in the categories specified.*
 
 ---
 
@@ -149,16 +156,6 @@ Define an AFK channel to exclude from voice activity tracking.
 
 ---
 
-### 11. **Embed Messaging**
-
-Send rich embed messages with customizable options like title, color, footer, images, and author details.
-
-**Command**:
-```plaintext
-/sendembed message:"Your main message" title:"Title" color:"#3498db" footer:"Footer text" image:"Image URL" thumbnail:"Thumbnail URL" author:"Author Name" author_icon:"Author Icon URL"
-```
-
----
 
 ### 12. **Leaderboard and XP System**
 

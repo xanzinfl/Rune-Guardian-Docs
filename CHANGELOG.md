@@ -2,6 +2,51 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [1.3.8] - 2025-06-01
+
+### Added
+- Overrides for developers in all configuration commands.
+- Invite details (code, inviter, etc.).
+- Additional options for `/sendembed` command: `${field1name}`, `${field1value}`, ..., `${field4value}`.
+- Ticket system with `/create-ticket-panel` and `/rename` *(now mostly functional)*.
+- Display of all user roles in leave logs.
+- `/modapplication` with subcommands:
+  - `create-panel`, `preview`, `set-channel`, `toggle-approval`.
+- `/purge` command.
+- Console logger for formatting and optional debug disabling.
+- `!sticky` command to pin a message at the bottom of a channel.
+- Reaction roles via `!rr @role :emoji:`.
+- Starboard feature with voting arrows.
+- Auto-registration of guild ID in the database (no more `/setup` needed).
+- Presence manager showing uptime percentage.
+- `/activity` to track user message activity.
+- `/vban-connect` to stream Spotify to voice channels.
+- `!420` and `/420` displays the next 4:20
+
+### Updates
+- Moderation commands now respect user permissions and/or `moderator_role`.
+- Fixes to bitfield errors in `/warn`, `/timeout`, `/ban`, `/kick`, `/punishmenthistory`, `/removepunishment`, `/unban`, `/verifymember`.
+- Removed ephemeral from `/restart`.
+- Reminder handler improved for timezone recognition and bug fixes.
+- Fixed ratelimits in `!sesh`, `!drinktime`, and `!chatrevive`
+- DMs added to moderation commands (`/ban`, `/kick`, `/warn`) and included in logs.
+- Punishment DMs improved in appearance.
+- SIGINT shutdown detection fixed for Windows and PM2.
+- Ticket transcript cache path updated and now deletes correctly.
+- Logger consolidated into one file.
+- `/welcomeconfig` updated.
+- `/about` updated with uptime and removed Discord.js version; added TOS and Privacy Policy.
+- Countgame updates: reacts with ✅ on correct count, ❌ and user on incorrect count.
+- MongoDB switched to local instance.
+- `/warn` now has optional DM.
+- `/ban` updated to ban non-server members.
+
+### Deprecated
+- Deprecated use of `ephemeral` and `fetchReply` interaction options in favor of flags.
+
+### Known Issues
+- Ticket system still has issues. (Please report any bugs in our official support server)
+
 ---
 
 ## [1.3.2] - 2025-1-7
@@ -191,7 +236,7 @@ All notable changes to Rune Guardian will be documented here.
 ### Added
 - **Welcome Features**
   - Sends welcome DM to new users.
-  - Posts a welcome message in a designated lounge channel.
+  - Posts a welcome message in a designated channel.
   
 ### Enhanced
 - **Logging**: Updated join logging with enhanced information.
@@ -204,8 +249,7 @@ All notable changes to Rune Guardian will be documented here.
 ## [1.0.1] - Initial Release
 ### Added
 - **Basic Event Logging**: Tracks joins, leaves, and role updates.
-- **Moderation Commands**: `/ban`, `/kick`, `/timeout`, `/warn`.
+- **Moderation Commands**: `/ban`, `/kick`, `/timeout`.
 - **Fun Commands**: `/drinktime`, `/sesh`, `/chatrevive`.
 - **Channel Management**: Auto role management for new members.
-- **Notifications**: DMs owner when it comes online.
 - **Member Count**: Initial support for member count embed and voice channel count.

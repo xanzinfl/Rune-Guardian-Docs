@@ -4,9 +4,9 @@ Last Updated: [3/31/2025]
 ## 1. Data We Collect
 Rune Guardian may collect the following data when used:
 
-- User IDs, Guild IDs, Channel IDs, Role IDs – To store preferences and settings.
+- User IDs, Guild IDs, Channel IDs, and Role IDs – To store preferences and settings.
 
-- Messages or Commands – For bot functionality (e.g., moderation logs, custom commands).
+- Messages and Command responses – For bot functionality (e.g., moderation logs, reminders).    
 
 - Direct Messages (DMs) to the Bot – Only when a user sends a message directly to the bot. These may be logged for support, reports, or automated features.
 
