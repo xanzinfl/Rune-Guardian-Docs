@@ -1,42 +1,99 @@
-# Privacy Policy
-Last Updated: [3/31/2025]
+# Rune Guardian Privacy Policy
+**Last Updated: June 8, 2025**
+
+Your privacy is important to us. This policy explains what data Rune Guardian collects, why we collect it, and how it is used.
+
+---
 
 ## 1. Data We Collect
-Rune Guardian may collect the following data when used:
 
-- User IDs, Guild IDs, Channel IDs, and Role IDs – To store preferences and settings.
+Rune Guardian may collect the following data when interacting with the bot:
 
-- Messages and Command responses – For bot functionality (e.g., moderation logs, reminders).    
+### General Identifiers
+- **User IDs**, **Guild IDs**, **Channel IDs**, and **Role IDs**  
+  *Used to store server-specific settings and personalization.*
 
-- Direct Messages (DMs) to the Bot – Only when a user sends a message directly to the bot. These may be logged for support, reports, or automated features.
+### Messages
+- **Command Inputs & Responses**  
+  *Logged for functionality like moderation, leaderboards, reminders, and activity tracking.*
+
+- **Direct Messages (DMs) to the Bot**  
+  *Stored only when you initiate contact with the bot — used for support, reports, and reminders*
+
+### Usage Activity
+- **User Activity Logs**  
+  *Used for metrics such as XP systems, text/voice participation, and server engagement.*
+
+### Moderation & Administration
+- **Punishments & Warnings**  
+  *Includes reason, moderator ID, and timestamp.*
+
+- **Mod Applications & Tickets**  
+  *Includes your answers, timestamps, and administrative decisions.*
+
+---
 
 ## 2. How We Use Your Data
-The collected data is used for the following purposes:
 
-- To provide bot functionality, including commands and automated responses.
+Collected data is used to:
 
-- To store user reports or support requests sent via DMs.
+- Provide and improve bot functionality (commands, settings, automation).
+- Respond to user requests, reports, and applications.
+- Log moderation actions for transparency and server accountability.
+- Track user engagement for systems like XP and leveling.
 
-- To log moderation actions if applicable.
+**We DO NOT sell or share your data with third parties.**
 
-We do NOT sell or share your data with third parties.
+---
 
 ## 3. Data Storage & Retention
-Stored data is kept securely and is only accessible by bot developers.
 
-DMs are only stored if the user messages the bot directly and are retained as long as needed for processing support requests or bot interactions.
+- Data is stored securely using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and is only accessible to the Rune Guardian development team.
+- DMs are stored **only** if you message the bot directly.
+- Application, ticket, and punishment data are stored for moderation history unless explicitly requested for deletion.
 
-Users may request the deletion of their stored data by contacting xanzinfl@gmail.com with the subject "DATA DELETION".
+### Data Deletion
+You may request data deletion by emailing:  
+**[xanzinfl@gmail.com](mailto:xanzinfl@gmail.com)**  
+Subject: `"DATA DELETION"`
+
+---
 
 ## 4. Third-Party Services
-Our bot integrates with third-party services listed below, their privacy policies may apply. We recommend reviewing their policies as well.
 
-- MongoDB Atlas
+Rune Guardian uses the following services:
+
+- **MongoDB Atlas** — [Privacy Policy](https://www.mongodb.com/legal/privacy-policy)
+
+Please refer to their policies for more details.
+
+---
 
 ## 5. Security Measures
-We take reasonable steps to protect stored data, but we cannot guarantee absolute security. Users should avoid sharing personal or sensitive information through the bot.
+
+We take reasonable steps to protect your data:
+
+- All access is restricted to developers.
+- Data is encrypted in transit using TLS.
+- Users are advised **not to share personal or sensitive data** with the bot.
+
+However, no system is 100% secure. Use at your own discretion.
+
+---
 
 ## 6. Changes to This Policy
-We may update this Privacy Policy at any time. Continued use of the bot after changes implies acceptance of the new terms.
 
-For questions or data removal requests, [Contact Us](https://linktr.ee/Rune.gg).
+This policy may be updated as necessary.  
+We will notify users of major changes via our [support server](https://discord.gg/422p3anb3T).
+
+**Continued use of the bot after changes implies acceptance.**
+
+---
+
+## 7. Contact Us
+
+For any questions or data concerns:  
+[https://linktr.ee/Rune.gg](https://linktr.ee/Rune.gg)
+
+---
+
