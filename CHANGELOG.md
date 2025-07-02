@@ -2,6 +2,36 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [1.3.10] - 2025-07-02
+
+### Added
+- System status embed in our support server.
+- Project status embed in our support server.
+- `/blacklist` - Allows the bot developers to blacklist a guild if they are caught violating our or discords TOS.
+- Ghost ping detection enabled via `/toggle-ghostping`
+- `/user` Shoes variouse information about a user, shows punishment history if the executor has moderation permsissions.
+- `/bugreport` Allows users to report a bug with specific features.
+- `/motm` Allows users to set a member of the month role based off xp.
+
+### Updates
+- Fixed an issue where `/updatecountvc` would fail in large servers.
+- Fixed not-bot ban logs.
+- Revamped `/showconfig` for overall readablility.
+- Replaced `setafkchannel` with `/xpexclude`
+- Replaced `/excludechannel` with `/messagelog exclude`
+- Replaced `/includechannel` with `/messagelog include`
+- Fixed per-server cooldowns in `!sesh` `!chatrevive` and `!drinktime`
+- Updated `/welcomeconfig` allows users to save message formatting properly now.
+- Changed xp per message from 10 to anywhere between 5-20
+
+### Deprecated
+- `Welcome_DM_MSG2` Welcome dms now consist of one message with optional buttons.
+
+### Known Issues
+- Welcome messages will not work until reconfigured in your server.
+
+---
+
 ## [1.3.8] - 2025-06-01
 
 ### Added

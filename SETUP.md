@@ -25,9 +25,6 @@ Set up automatic role assignment for new members.
    ```
 
 ---
-Here’s a **Setup Guide** section specifically for your **Ticket System**, formatted to match the rest of your Rune Guardian setup documentation:
-
----
 
 ### 3. **Ticket System Setup**
 
@@ -95,14 +92,39 @@ Set up a counting channel for users to participate in counting.
 
 ### 6. **Welcome System Configuration**
 
-Customize the welcome messages.
+Customize your server’s welcome experience with flexible, formatted messages and optional buttons.
 
-**Commands**:
-- **Configure Welcome Settings**:
-   ```usage
-   /welcomeconfig ticket_channel:#TicketChannel ban_appeal:"Ban Appeal Link" staff_app:"Staff Application Link" staff_report:"Staff Report Link" welcome_message:"Welcome to our server!" welcome_dm_message:"Welcome DM text" welcome_dm_message_2:"Additional DM text" welcome_channel:#WelcomeChannel
-   ```
-**Note**: The links and ticket channel id are for buttons under the second welcome message
+---
+
+#### **Command**
+
+```usage
+/welcomeconfig set_target:<welcome_message|welcome_dm_message> welcome_channel:#welcome-channel
+```
+
+* `set_target` — Choose whether you're setting the **public welcome message** or **DM welcome message**.
+* `welcome_channel` — (Optional) Set the public welcome channel when configuring a public message.
+
+---
+
+#### **How It Works**
+
+After running the command:
+
+1. You’ll be prompted to send your desired message.
+2. The next message you send (within 60 seconds) will be saved **exactly as sent** — with formatting, mentions, etc.
+3. This message will be used whenever a new member joins.
+
+---
+
+#### **Buttons for DM Welcome**
+
+When setting a **DM welcome message**, the following optional buttons may appear under the message if configured:
+
+* **Ban Appeal** — `/welcomeconfig ban_appeal:"https://example.com/appeal"`
+* **Staff Application** — `/welcomeconfig staff_app:"https://example.com/apply"`
+* **Staff Report** — `/welcomeconfig staff_report:"https://example.com/report"`
+* **Create a Ticket** — `/welcomeconfig ticket_channel:#tickets`
 
 ---
 
@@ -110,11 +132,37 @@ Customize the welcome messages.
 
 Specify channels for different types of logs such as moderation actions, member joins/leaves, and message edits/deletes.
 
-**Commands**:
-- **Set Log Channels**:
-   ```plaintext
-   /setlogchannel moderation_log:#ModerationLog call_log:#CallLog member_log:#MemberLog role_log:#RoleLog message_log:#MessageLog channel_log:#ChannelLog all_log_channel:#GeneralLogChannel
-   ```
+---
+
+#### **Set Log Channels**
+
+```plaintext
+/setlogchannel moderation_log:#ModerationLog call_log:#CallLog member_log:#MemberLog role_log:#RoleLog message_log:#MessageLog channel_log:#ChannelLog all_log_channel:#GeneralLogChannel
+```
+
+This command allows you to configure where specific types of logs are sent:
+
+* **Moderation Logs** — Warnings, bans, kicks, timeouts
+* **Call Logs** — Voice state changes
+* **Member Logs** — Joins, leaves, boosts, etc.
+* **Role Logs** — Role updates
+* **Message Logs** — Message edits and deletions
+* **Channel Logs** — Channel creation, deletion, or updates
+* **All Log Channel** — Sends all logs to one channel
+
+---
+
+#### **Message Log Channel Exclusions**
+
+Use `/messagelog` to exclude or include specific channels from message logging.
+
+```plaintext
+/messagelog exclude channel:#general
+/messagelog include channel:#general
+```
+
+* **Exclude** — Prevents messages in the specified channel from being logged.
+* **Include** — Re-enables logging for that channel if it was previously excluded.
 
 ---
 
@@ -145,19 +193,7 @@ Configure special roles for admin, moderator, verified members, and additional r
 
 ---
 
-### 10. **AFK Channel Setup**
-
-Define an AFK channel to exclude from voice activity tracking.
-
-**Command**:
-```plaintext
-/setafkchannel channel:#AFKChannel
-```
-
----
-
-
-### 12. **Leaderboard and XP System**
+### 10. **Leaderboard and XP System**
 
 **Commands**:
 - **Check Level**:
@@ -168,14 +204,26 @@ Define an AFK channel to exclude from voice activity tracking.
    ```plaintext
    /top type:<text or voice>
    ```
+- **Enable Member of the month**:
+   ```plaintext
+   /motm enable role:@Member Of The Month
+   ```
+   > **Note:** Enabling this resets text and voice leaderboards at the beggining of every month.
 - **Reset Leaderboard**:
    ```plaintext
    /resetleaderboard type:<text, voice, or all>
    ```
-
+- **Reset a User's Xp**:
+   ```plaintext
+   /resetuserxp type:<text or voice>
+   ```
+- **Exclude/include Channels**:
+   ```plaintext
+   /xpexclude add:<text or voice channel> remove:<text or voice channel>
+   ```
 ---
 
-### 13. **Server Information and Verification**
+### 11. **Server Information and Verification**
 
 **Commands**:
 - **Display Server Information**:
@@ -193,7 +241,7 @@ Define an AFK channel to exclude from voice activity tracking.
 
 ---
 
-### 14. **Show Current Configuration**
+### 12. **Show Current Configuration**
 
 Use this command to view all currently configured settings for your guild.
 
@@ -206,7 +254,7 @@ This displays a summary of all active configuration settings in your guild.
 
 ---
 
-### 15. **Help Command**
+### 13. **Help Command**
 
 If you need help with any specific command, use `/help` followed by the command name.
 
