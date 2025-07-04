@@ -1,35 +1,102 @@
 # Rune Guardian
 
-Rune Guardian is a versatile Discord bot that offers features for server management, moderation, and user engagement. This bot is designed to manage your server more efficiently, while providing fun and interactive commands for the community.
+**Rune Guardian** is a versatile Discord bot designed to enhance community interaction, automate moderation, and provide rich utility features for server administrators. With a balance between fun, customization, and control, Rune Guardian is ideal for both casual and organized servers.
 
-## Features
-- **Event Logging**: Automatically logs events such as channel changes, member joins/leaves, message edits/deletions, and role updates.
-- **Moderation Commands**: Quickly manage members with commands for banning, kicking, warning, and timeouts.
-- **Auto Role**: Automatically assign a role to new members joining the server.
-- **XP Tracking and Leaderboards**: Track user activity and display leaderboards for text and voice participation.
-- **Engagement Commands**: Fun commands like `troll`, `!sesh`, and `!drinktime` keep your community entertained.
-- **Mod Application Forms**: Currently with 5 preset questions and an approval system.
-- **Ticket System**: Fully functional ticket system with 2 ticket types, and transcripts.
+---
+
+## ✨ Features
+
+### Moderation
+
+* Slash commands for `/ban`, `/kick`, `/warn`, `/timeout`, `/unban`, `/purge`, and more.
+* Punishment history logs, automatic mod actions, and `/removePunishment`.
+* Built-in moderation applications.
+
+### Logging & Auditing
+
+* Detailed audit logging for message, channel, role, member, and server changes.
+* Track ghost pings, deletions, edits, joins/leaves, voice changes, and more.
+* Modular logger with real-time log channels.
+
+### Tickets
+
+* Fully featured ticket system with customizable panels, renaming, and transcripts.
+* Supports internal transcript logging in a downloadable markdown format.
+
+### XP & Leaderboards
+
+* Track member activity (text & voice).
+* `/level`, `/top`, `/resetleaderboard`, `/resetuserxp`, and XP exclusions via `/xpexclude`.
+* Configurable XP system with channel blacklist.
+
+### Engagement & Community Tools
+
+* Fun commands like `/troll`, `/spam`, `/roll`, `!420`, `!drinktime`, `!sesh`, and `!chatrevive`.
+* Custom reminder system: `/reminder`.
+
+### Starboard
+
+* Configure a starboard channel using `/starboard` to highlight popular messages.
+* Reaction based system with customizable emojis.
+
+### Utility
+
+* `/about`, `/serverinfo`, `/sendembed`, `/bugreport`, `/feedback`, `/help`, and `/modhelp`.
+* Auto-updating member count displays (`/membercountconfig`).
+
+### Customization & Config
+
+* Slash commands to configure:
+
+  * Auto role system (`/autorole`)
+  * Logging channels (`/setlogchannel`)
+  * Welcome messages and DMs (`/welcomeconfig`)
+  * Starboard, counting channels, server description (`/starboard`, `/setcountingchannel`, `/setServerInfo`)
+  * MOTM system toggle (`/motm`)
+  * Feedback system (`/setfeedbackchannel`)
+* All configs viewable via `/showconfig`.
+
+---
 
 ## Commands
-For a complete list of commands, use `/help` or `/modhelp` within your server or see [here](https://github.com/xanzinfl/Rune-Guardian-Docs/blob/main/COMMANDLIST.md). Some popular commands include:
-- **Moderation**: `/ban`, `/kick`, `/warn`, `/timeout`
-- **Logging**: Automatically logs events such as message deletions, channel updates, guild updates, voice updates, and member activities.
-- **XP & Leaderboards**: `/level` to check levels and `/top` to view leaderboards.
-- **Fun & Engagement**: `/troll`, `!sesh`, `/!chatrevive`, and more.
 
-## Adding Rune Guardian to Your Server
-1. **Invite the Bot** using [this link](https://discord.com/oauth2/authorize?client_id=1285116010822893579).
-2. **Grant Necessary Permissions** (Manage Roles, Moderate/Kick/Ban Members, Manage Messages, etc.).
-3. **Follow the Setup Guide**: [Read Here](https://github.com/xanzinfl/Rune/blob/main/SETUP.md).
+Use `/help` or `/modhelp` for in-server command lists.
 
-## Getting Help
-Need help? Join our [Support Server](https://discord.gg/422p3anb3T) for FAQs, bug reports, and feature requests. 
+> See the full [COMMAND LIST](./COMMANDLIST.md)
 
-For additional resources and contact information, visit our [Linktree](https://linktr.ee/Rune.gg).
+Examples:
 
-## Terms of Service
-By using Rune Guardian, you agree to comply with its terms of service and community guidelines found [here](https://github.com/xanzinfl/Rune-Guardian-Docs/blob/main/TermsOfService.md).
+* **Moderation**: `/ban`, `/warn`, `/modapplication`
+* **Utility**: `/reminder`, `/serverinfo`, `/sendembed`
+* **XP**: `/level`, `/top`, `/xpexclude`
+* **Fun**: `/troll`, `!420`, `!sesh`, `!drinktime`
+* **Tickets**: `/create-ticket-panel`, `/rename`
 
-## Privacy
-For information on what data we collect and how we use it check out our [Privacy Policy](https://github.com/xanzinfl/Rune-Guardian-Docs/blob/main/PrivacyPolicy.md)
+---
+
+## 🚀 Getting Started
+
+1. [**Invite Rune Guardian**](https://discord.com/oauth2/authorize?client_id=1285116010822893579)
+2. Grant required permissions (Moderate/Kick/Ban Members, Manage Roles, Messages, Webhooks, etc.)
+3. Run `/setup` or follow the [Setup Guide](./SETUP.md)
+
+---
+
+## Support & Resources
+
+* Join our [Support Server](https://discord.gg/422p3anb3T)
+* [Linktree](https://linktr.ee/Rune.gg)
+* [Status Page](http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian)
+* [Email Us](mailto:xanzinfl@gmail.com)
+
+---
+
+## 📜 Legal
+
+### Terms
+By using Rune Guardian, you agree to comply with its terms of service and community guidelines found [here](./TermsOfService.md).
+
+### Privacy
+For information on what data we collect and how we use it check out our [Privacy Policy](./PrivacyPolicy.md)
+
+---
