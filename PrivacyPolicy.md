@@ -1,5 +1,5 @@
 # Rune Guardian Privacy Policy
-**Last Updated: June 8, 2025**
+**Last Updated: July 3, 2025**
 
 Your privacy is important to us. This policy explains what data Rune Guardian collects, why we collect it, and how it is used.
 
@@ -48,7 +48,7 @@ Collected data is used to:
 
 ## 3. Data Storage & Retention
 
-- Data is stored securely using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and is only accessible to the Rune Guardian development team.
+- Data is stored securely using [MongoDB](https://www.mongodb.com/legal/terms-of-use) and is only accessible to the Rune Guardian development team.
 - DMs are stored **only** if you message the bot directly.
 - Application, ticket, and punishment data are stored for moderation history unless explicitly requested for deletion.
 
@@ -63,7 +63,7 @@ Subject: `"DATA DELETION"`
 
 Rune Guardian uses the following services:
 
-- **MongoDB Atlas** — [Privacy Policy](https://www.mongodb.com/legal/privacy-policy)
+- **MongoDB** — [Privacy Policy](https://www.mongodb.com/legal/privacy-policy)
 
 Please refer to their policies for more details.
 
