@@ -16,6 +16,7 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 - **`/bugreport`** - Send a bugreport to the bot support team.
 
 - **`/setup`** - Initializes the server's database and displays configuration options.
+  🔐 Requires: Administrator
 
 - **`/showconfig`** - Shows the current server settings.  
   🔐 Requires: Administrator
@@ -27,7 +28,7 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
   **Option:** `command`
 
 - **`/modhelp`** - Lists all moderation commands.  
-  🔐 Requires: Moderator Role
+  🔐 Requires: Moderate Members
 
 - **`/reminder`** - Manage reminders.  
   **Subcommands:**
@@ -53,28 +54,36 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 ---
 
+## Ticket Commands
+
+- **`/rename`** - Rename the current ticket.
+  **Option:** `new_name`
+  🔐 Requires: Manage Channels
+
+---
+
 ## Moderation Commands
 
 > 🔐 All moderation commands require proper permissions.
 
 - **`/ban`** - Ban a user.  
-  **Options:** `user` (required), `reason` (required), `image` (optional)  
+  **Options:** `user`, `reason`, `dm`, `image`  
   🔐 Requires: Ban Members
 
 - **`/unban`** - Unban a user by ID.  
-  **Options:** `user` (required), `reason` (optional)  
+  **Options:** `user`, `reason`
   🔐 Requires: Ban Members
 
 - **`/kick`** - Kick a user.  
-  **Options:** `user` (required), `reason` (required), `image` (optional)  
+  **Options:** `user`, `reason`, `dm`, `image`  
   🔐 Requires: Kick Members
 
 - **`/timeout`** - Temporarily mute a user.  
-  **Options:** `user`, `reason`, `duration`, `image`  
+  **Options:** `user`, `reason`, `duration`, `dm`, `image`  
   🔐 Requires: Moderate Members
 
 - **`/warn`** - Issue a warning.  
-  **Options:** `user`, `reason`, `image`  
+  **Options:** `user`, `reason`, `dm`, `image`  
   🔐 Requires: Moderate Members
 
 - **`/punishmenthistory`** - View a user’s punishment history.  
@@ -130,15 +139,15 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 - **`/troll`** - Drag a user between two voice channels and spam ping them.  
   **Options:** `userid`, `channelid`, `vc1id`, `vc2id`  
-  🔐 Requires: Moderator Role
+  🔐 Requires: Manage Messages
 
 - **`/trollstop`** - Stop an active troll session.  
   **Option:** `userid`  
-  🔐 Requires: Moderator Role
+  🔐 Requires: Manage Messages
 
 - **`/spam`** - Spam ping a user.
   **Options:** `channel` (required), `user`, `role`  
-  🔐 Requires: Moderator Role
+  🔐 Requires: Manage Messages
 
 - **`/420` or `!420`** - Displays the next 4:20.
 
@@ -176,7 +185,7 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 - **`/autorole`** - Set or remove automatic roles for new members.  
   **Subcommands:** `set`, `remove`  
-  🔐 Requires: Moderator Role
+  🔐 Requires: Manage Roles
 
 - **`/motm`** - Enable or disable Member of the Month.  
   **Subcommands:** `enable`, `disable`  
@@ -208,6 +217,15 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 * **`/modapplication`** - Configure and manage moderator application systems.
   - **Subcommands:** `create-panel`, `preview`, `set-channel`, `toggle-approval`
+
+  🔐 **Requires:** Administrator
+
+* **`/create-ticket-panel`** - Configure a ticket panel.
+  - **Options:** `transcripts_channel`, `open_category`, `ticket1_name`, `ticket1_description`, `ticket2_name`, `ticket2_description`
+
+  🔐 **Requires:** Administrator
+
+* **`/toggle-ghostping`** - Toggle the ghost ping detection system
 
   🔐 **Requires:** Administrator
 
