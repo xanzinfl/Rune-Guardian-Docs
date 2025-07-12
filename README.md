@@ -1,6 +1,6 @@
 # Rune Guardian
 
-![Servers](https://top.gg/api/widget/servers/1285116010822893579.svg)
+[![Servers](https://top.gg/api/widget/servers/1285116010822893579.svg)](https://top.gg//bot/1285116010822893579) 
 [![Votes](https://top.gg/api/widget/upvotes/1285116010822893579.svg)](https://top.gg//bot/1285116010822893579) 
 <a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/status" /></a> <a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/uptime" /></a>
 
