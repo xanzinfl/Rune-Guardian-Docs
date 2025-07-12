@@ -2,6 +2,86 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [2.0.0] - 2025-07-10
+
+### Added
+- Introducing our brand new web dashboard, configure you entire server effortlessly. https://runeguardian.xyz
+  - Manage settings
+  - Server Overview
+  - Member Overview
+  - Punishments Overview
+  - Ticket System
+- Added {user} and {memberCount} as placeholders in welcome messages.
+- Added several new commands for tickets, supports slash and prefix commands.
+  - `/claim`
+  - `/unclaim`
+  - `/rename`
+  - `/close`
+  - `/reopen`
+- Added `/dashboard`
+
+### Changes
+- Changed permission checks in all commands to hide the commands entierly if the user doesnt have permission.
+- Mod Applications
+  - Changed to a multi purpose application system
+  - Added ablity to customize the panel title, description, open button.
+  - Added ablity to customize each question.
+  - DMs users with the status of thier app if approval is enabled.
+
+- Major revemp to the ticket system.
+  - Create multiple ticket types in a single panel.
+  - Create almost infinite panels.
+  - Full customization over the panel and welcome messages.
+  - Ticket Claims
+  - Lists ticket status in channel topic.
+
+- Bot Removal:
+  - Upon removal of the bot from a server it will delete the following from the database
+  - All server settings
+  - User levels & XP
+  - Punishment history
+  - Ticket Panels
+  - Ticket Specific Data
+  - Aplication Data
+  - Sticky Messages
+  - Reaction Roles
+  - User activity data
+
+- Updated `/modhelp` to show newer commands
+- Moved TOS to the dashboard
+- Moved privacypolicy to the dashboard
+- Cleaned up api calls in AuditLogger
+- Updated internal error/debug logging in several commands and features.
+- Fixed an issue where welcome logging would fail entirely without MANAGE_GUILD
+- Updated several slash command permissions. See the [Command List](./COMMANDLIST.md)
+
+### Deprecated
+- Removed the preset header in welcome messages.
+- `/modapplication` Removed in favor of the dashboard
+- `/configureroles` Removed in favor of the dashboard
+- `/welcomeconfig` Removed in favor of the dashboard
+- `/toggle-ghostping` Removed in favor of the dashboard
+- `/membercountconfig` Removed in favor of the dashboard
+- `/setfeedbackchannel` Removed in favor of the dashboard
+- `/setcountingchannel` Removed in favor of the dashboard
+- `/setserverinfo` Removed in favor of the dashboard
+- `/setlogchannel` Removed in favor of the dashboard
+- `/messagelog` Removed in favor of the dashboard
+- `/xpexclude` Removed in favor of the dashboard
+- `/autorole` Removed in favor of the dashboard
+- `/starboard` Removed in favor of the dashboard
+- `/create-ticket-panel` Removed in favor of the dashboard
+- `/showconfig` Removed in favor of the dashboard
+- `/motm` Removed in favor of the dashboard
+- `adminRoleId` No longer in use
+- `moderatorRoleId` No longer in use
+- `/setup` Will be removed in future versions
+- `/showconfig` Will be removed in future versions
+
+### Known Issues
+
+---
+
 ## [1.3.10] - 2025-07-02
 
 ### Added
@@ -13,7 +93,7 @@ All notable changes to Rune Guardian will be documented here.
 - `/bugreport` Allows users to report a bug with specific features.
 - `/motm` Allows users to set a member of the month role based off xp.
 
-### Updates
+### Changes
 - Fixed an issue where `/updatecountvc` would fail in large servers.
 - Fixed not-bot ban logs.
 - Revamped `/showconfig` for overall readablility.
@@ -53,7 +133,7 @@ All notable changes to Rune Guardian will be documented here.
 - `/vban-connect` to stream Spotify to voice channels.
 - `!420` and `/420` displays the next 4:20
 
-### Updates
+### Changes
 - Moderation commands now respect user permissions and/or `moderator_role`.
 - Fixes to bitfield errors in `/warn`, `/timeout`, `/ban`, `/kick`, `/punishmenthistory`, `/removepunishment`, `/unban`, `/verifymember`.
 - Removed ephemeral from `/restart`.

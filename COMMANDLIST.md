@@ -15,11 +15,14 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 - **`/bugreport`** - Send a bugreport to the bot support team.
 
-- **`/setup`** - Initializes the server's database and displays configuration options.
-  🔐 Requires: Administrator
+- **`/setup`** - Displays configuration options.
+  🔐 Requires: Manage Guild
 
 - **`/showconfig`** - Shows the current server settings.  
-  🔐 Requires: Administrator
+  🔐 Requires: Manage Guild
+
+- **`/dashboard`** - Shows the bots dashboard.
+  🔐 Requires: Manage Guild
 
 - **`/serverinfo`, `!serverinfo`** - Displays server information.  
   *(Configured using `/setserverinfo`)*
@@ -49,22 +52,31 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 - **`!rr`** - Add a reaction role to a message.  
   **Usage:** `!rr @role :emoji:`
 
-- **`/starboard`** - Manage the starboard feature.  
-  **Subcommands:** `setthreshold`, `setchannel`, `setemoji`, `ignore`, `unignore`, `enable`, `disable`
-
 ---
 
 ## Ticket Commands
 
 - **`/rename`** - Rename the current ticket.
   **Option:** `new_name`
-  🔐 Requires: Manage Channels
+  🔐 Requires: Manage Guild, Support Roles
+
+- **`/close`** - Close the current ticket.
+  **Option:** `reason`
+  🔐 Requires: Manage Guild, Support Roles
+
+- **`/reopen`** - Reopen the current ticket.
+  **Option:** `reason`
+  🔐 Requires: Manage Guild, Support Roles
+
+- **`/claim`** - Claim the current ticket.
+  🔐 Requires: Manage Guild, Support Roles
+
+- **`/unclaim`** - Unclaim the current ticket.
+  🔐 Requires: Manage Guild, Support Roles
 
 ---
 
 ## Moderation Commands
-
-> 🔐 All moderation commands require proper permissions.
 
 - **`/ban`** - Ban a user.  
   **Options:** `user`, `reason`, `dm`, `image`  
@@ -118,7 +130,7 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 - **`/resetleaderboard`** - Reset leaderboard data.  
   **Option:** `type`: `text`, `voice`, or `all`  
-  🔐 Requires: Administrator
+  🔐 Requires: Manage Guild
 
 - **`/activity`** - View user activity.  
   **Options:**  
@@ -155,79 +167,8 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 
 ## Member Count Commands
 
-- **`/membercountconfig`** - Configure member count settings.  
-  **Options:** `verified_role`, `eighteen_plus_role`, `embed_channel`, `voice_channel`  
-  🔐 Requires: Moderate Members
-
 - **`/updatecountembed`**, **`/updatecountvc`** - Manually update member count displays.  
-  🔐 Requires: Administrator
-
----
-
-## Server Settings
-
-- **`/setlogchannel`** - Set log channels for various events.  
-    **Options:** `moderation_log`, `call_log`, `member_log`, `role_log`, `message_log`, `channel_log`, `all_log_channel`  
-  🔐 Requires: Administrator
-
-- **`/welcomeconfig`** - Configure and set welcome messages for new members.  
-  **Options:**
-  - `set_target` — Choose `welcome_message` (public) or `welcome_dm_message` (DM), then reply to the bot with your welcome message.
-  - `welcome_channel` — Optional (only used with `welcome_message`)
-
-  > Buttons for ticket creation, staff applications, ban appeals, and staff reports are automatically included under the **DM welcome message**—if their respective links are provided via `/welcomeconfig`.
-
-  🔐 **Requires:** Administrator
-
-- **`/configureroles`** - Set roles used by the bot.  
-  **Options:** `slashverify_role`, `admin_role`, `moderator_role`, `sesh_role`, `chatrevive_role`, `drink_role`  
-  🔐 Requires: Administrator
-
-- **`/autorole`** - Set or remove automatic roles for new members.  
-  **Subcommands:** `set`, `remove`  
-  🔐 Requires: Manage Roles
-
-- **`/motm`** - Enable or disable Member of the Month.  
-  **Subcommands:** `enable`, `disable`  
-  **Option:** `role`  
-  🔐 Requires: Administrator
-
-- **`/setserverinfo`** - Set server info shown with `/serverinfo`.  
-  🔐 Requires: Administrator
-
-- **`/setcountingchannel`** - Set the counting game channel.  
-  **Option:** `channel`  
-  🔐 Requires: Administrator
-
-- **`/setfeedbackchannel`** - Set where feedback is sent.  
-  **Option:** `channel`  
-  🔐 Requires: Administrator
-
-- **`/xpexclude`** - Include or exclude a channel from gaining XP.
-  -  **Subcommands:** `add`, `remove`
-  -  **Option:** `channel`
-
-  🔐 **Requires:** Administrator
-
-* **`/messagelog`** - Manage which channels are included in message logging.
-  - **Subcommands:** `include`, `exclude`
-  - **Option:** `channel`
-
-  🔐 **Requires:** Administrator
-
-* **`/modapplication`** - Configure and manage moderator application systems.
-  - **Subcommands:** `create-panel`, `preview`, `set-channel`, `toggle-approval`
-
-  🔐 **Requires:** Administrator
-
-* **`/create-ticket-panel`** - Configure a ticket panel.
-  - **Options:** `transcripts_channel`, `open_category`, `ticket1_name`, `ticket1_description`, `ticket2_name`, `ticket2_description`
-
-  🔐 **Requires:** Administrator
-
-* **`/toggle-ghostping`** - Toggle the ghost ping detection system
-
-  🔐 **Requires:** Administrator
+  🔐 Requires: Manage Guild
 
 ---
 

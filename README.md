@@ -1,5 +1,9 @@
 # Rune Guardian
 
+![Servers](https://top.gg/api/widget/servers/1285116010822893579.svg)
+[![Votes](https://top.gg/api/widget/upvotes/1285116010822893579.svg)](https://top.gg//bot/1285116010822893579) 
+<a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/status" /></a> <a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/uptime" /></a>
+
 **Rune Guardian** is a versatile Discord bot designed to enhance community interaction, automate moderation, and provide rich utility features for server administrators. With a balance between fun, customization, and control, Rune Guardian is ideal for both casual and organized servers.
 
 ---
@@ -9,8 +13,8 @@
 ### Moderation
 
 * Slash commands for `/ban`, `/kick`, `/warn`, `/timeout`, `/unban`, `/purge`, and more.
-* Punishment history logs, automatic mod actions, and `/removePunishment`.
-* Built-in moderation applications.
+* Punishment history logs, automatic mod actions, and `/removepunishment`.
+* Built-in moderator applications.
 
 ### Logging & Auditing
 
@@ -26,7 +30,7 @@
 ### XP & Leaderboards
 
 * Track member activity (text & voice).
-* `/level`, `/top`, `/resetleaderboard`, `/resetuserxp`, and XP exclusions via `/xpexclude`.
+* `/level`, `/top`, `/resetleaderboard`, `/resetuserxp`, and XP exclusions.
 * Configurable XP system with channel blacklist.
 
 ### Engagement & Community Tools
@@ -36,25 +40,13 @@
 
 ### Starboard
 
-* Configure a starboard channel using `/starboard` to highlight popular messages.
+* Configure a starboard channel to highlight popular messages.
 * Reaction based system with customizable emojis.
 
 ### Utility
 
 * `/about`, `/serverinfo`, `/sendembed`, `/bugreport`, `/feedback`, `/help`, and `/modhelp`.
-* Auto-updating member count displays (`/membercountconfig`).
-
-### Customization & Config
-
-* Slash commands to configure:
-
-  * Auto role system (`/autorole`)
-  * Logging channels (`/setlogchannel`)
-  * Welcome messages and DMs (`/welcomeconfig`)
-  * Starboard, counting channels, server description (`/starboard`, `/setcountingchannel`, `/setServerInfo`)
-  * MOTM system toggle (`/motm`)
-  * Feedback system (`/setfeedbackchannel`)
-* All configs viewable via `/showconfig`.
+* Auto-updating member count displays.
 
 ---
 
@@ -66,19 +58,19 @@ Use `/help` or `/modhelp` for in-server command lists.
 
 Examples:
 
-* **Moderation**: `/ban`, `/warn`, `/modapplication`
+* **Moderation**: `/ban`, `/warn`, `/punishmenthistory`
 * **Utility**: `/reminder`, `/serverinfo`, `/sendembed`
 * **XP**: `/level`, `/top`, `/xpexclude`
 * **Fun**: `/troll`, `!420`, `!sesh`, `!drinktime`
-* **Tickets**: `/create-ticket-panel`, `/rename`
+* **Tickets**: `/claim`, `/rename`, `/close`
 
 ---
 
 ## 🚀 Getting Started
 
 1. [**Invite Rune Guardian**](https://discord.com/oauth2/authorize?client_id=1285116010822893579)
-2. Grant required permissions (Moderate/Kick/Ban Members, Manage Roles, Messages, Webhooks, etc.)
-3. Run `/setup` or follow the [Setup Guide](./SETUP.md)
+2. Grant required permissions (Moderate/Kick/Ban Members, Manage Roles, Messages, Webhooks, etc.)   
+3. Visit the [Dashboard](https://runeguardian.xyz) and configure your server.
 
 ---
 
@@ -87,16 +79,16 @@ Examples:
 * Join our [Support Server](https://discord.gg/422p3anb3T)
 * [Linktree](https://linktr.ee/Rune.gg)
 * [Status Page](http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian)
-* [Email Us](mailto:xanzinfl@gmail.com)
+* [Email Us](mailto:support@runeguardian.xyz)
 
 ---
 
 ## 📜 Legal
 
 ### Terms
-By using Rune Guardian, you agree to comply with its terms of service and community guidelines found [here](./TermsOfService.md).
+By using Rune Guardian, you agree to comply with its terms of service and community guidelines found [here](https://runeguardian.xyz/terms).
 
 ### Privacy
-For information on what data we collect and how we use it check out our [Privacy Policy](./PrivacyPolicy.md)
+For information on what data we collect and how we use it check out our [Privacy Policy](https://runeguardian.xyz/privacy)
 
 ---
