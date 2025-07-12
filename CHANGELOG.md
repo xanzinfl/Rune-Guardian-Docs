@@ -2,7 +2,7 @@
 
 All notable changes to Rune Guardian will be documented here.
 
-## [2.0.0] - 2025-07-10
+## [2.0.0] - 2025-07-12
 
 ### Added
 - Introducing our brand new web dashboard, configure you entire server effortlessly. https://runeguardian.xyz
@@ -77,8 +77,6 @@ All notable changes to Rune Guardian will be documented here.
 - `moderatorRoleId` No longer in use
 - `/setup` Will be removed in future versions
 - `/showconfig` Will be removed in future versions
-
-### Known Issues
 
 ---
 
