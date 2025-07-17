@@ -145,9 +145,7 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
   **Option:** `dice` (e.g. `d6`, `2d20`)
 
 - **`!drinktime`, `!sesh`, `!chatrevive`** - Ping associated roles.  
-  ⏱ Cooldowns:  
-  - Drinktime / Sesh: 1 Hour  
-  - Chatrevive: 45 Minutes
+  ⏱ Cooldown: 45 Minutes
 
 - **`/troll`** - Drag a user between two voice channels and spam ping them.  
   **Options:** `userid`, `channelid`, `vc1id`, `vc2id`  

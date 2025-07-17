@@ -2,6 +2,23 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [2.0.1] - 2025-07-17
+
+### Added
+- Added special replies for when the bot lacks permission to open/close tickets.
+- Added a note to save changes before sending the application panel.
+- The bot sends a message to role logs when it lacks access to assign the autorole
+
+### Changes
+- Fixed count game config not showing up
+- Changed the site header logo
+- Fixed broken css on dropdowns
+- Updated dashboard css for readability
+- Changed cooldowns in `!sesh` and `!chatrevive` to 45 minutes.
+- Fixed welcome DM Messages
+
+---
+
 ## [2.0.0] - 2025-07-12
 
 ### Added
