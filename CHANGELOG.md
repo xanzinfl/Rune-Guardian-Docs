@@ -2,6 +2,11 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [2.0.2] - 2025-07-22
+
+### Changes
+- Fixed welcome messages not sending
+
 ## [2.0.1] - 2025-07-17
 
 ### Added
