@@ -2,7 +2,7 @@
 
 [![Servers](https://top.gg/api/widget/servers/1285116010822893579.svg)](https://top.gg//bot/1285116010822893579) 
 [![Votes](https://top.gg/api/widget/upvotes/1285116010822893579.svg)](https://top.gg//bot/1285116010822893579) 
-<a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/status" /></a> <a target="_blank" href="http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian"><img src="http://member-contribute.gl.at.ply.gg:56388/api/badge/5/uptime" /></a>
+<a target="_blank" href="https://status.bloodmoonstudios.xyz/status/rune-guardian"><img src="https://status.bloodmoonstudios.xyz/api/badge/5/status" /></a> <a target="_blank" href="https://status.bloodmoonstudios.xyz/status/rune-guardian"><img src="https://status.bloodmoonstudios.xyz/api/badge/5/uptime" /></a>
 
 **Rune Guardian** is a versatile Discord bot designed to enhance community interaction, automate moderation, and provide rich utility features for server administrators. With a balance between fun, customization, and control, Rune Guardian is ideal for both casual and organized servers.
 
@@ -78,7 +78,7 @@ Examples:
 
 * Join our [Support Server](https://discord.gg/422p3anb3T)
 * [Linktree](https://linktr.ee/Rune.gg)
-* [Status Page](http://member-contribute.gl.at.ply.gg:56388/status/rune-guardian)
+* [Status Page](https://status.bloodmoonstudios.xyz/status/rune-guardian)
 * [Email Us](mailto:support@runeguardian.xyz)
 
 ---
