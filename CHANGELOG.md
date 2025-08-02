@@ -2,10 +2,28 @@
 
 All notable changes to Rune Guardian will be documented here.
 
+## [2.0.3] - 2025-08-01
+
+### Added
+- Top.gg listing, Vote for us at https://top.gg/bot/1285116010822893579
+- Links page
+
+### Changes
+- Updated the dashboards theme
+
+### Deprecated
+- `/troll` - Removed due to api limitations
+- `/spam` - Removed due to api limitations
+- `/trollstop`
+
+---
+
 ## [2.0.2] - 2025-07-22
 
 ### Changes
 - Fixed welcome messages not sending
+
+---
 
 ## [2.0.1] - 2025-07-17
 
@@ -179,7 +197,7 @@ All notable changes to Rune Guardian will be documented here.
 
 ---
 
-## [1.3.2] - 2025-1-7
+## [1.3.2] - 2025-01-07
 ### Added
 - **Commands**
   - `/setserverinfo`: Sets the server information.

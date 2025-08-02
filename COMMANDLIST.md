@@ -147,18 +147,6 @@ A complete list of commands for **Rune Guardian**, including descriptions, optio
 - **`!drinktime`, `!sesh`, `!chatrevive`** - Ping associated roles.  
   ⏱ Cooldown: 45 Minutes
 
-- **`/troll`** - Drag a user between two voice channels and spam ping them.  
-  **Options:** `userid`, `channelid`, `vc1id`, `vc2id`  
-  🔐 Requires: Manage Messages
-
-- **`/trollstop`** - Stop an active troll session.  
-  **Option:** `userid`  
-  🔐 Requires: Manage Messages
-
-- **`/spam`** - Spam ping a user.
-  **Options:** `channel` (required), `user`, `role`  
-  🔐 Requires: Manage Messages
-
 - **`/420` or `!420`** - Displays the next 4:20.
 
 ---

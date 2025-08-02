@@ -35,7 +35,7 @@
 
 ### Engagement & Community Tools
 
-* Fun commands like `/troll`, `/spam`, `/roll`, `!420`, `!drinktime`, `!sesh`, and `!chatrevive`.
+* Fun commands like `!roll`, `!420`, `!drinktime`, `!sesh`, and `!chatrevive`.
 * Custom reminder system: `/reminder`.
 
 ### Starboard
@@ -68,17 +68,14 @@ Examples:
 
 ## 🚀 Getting Started
 
-1. [**Invite Rune Guardian**](https://discord.com/oauth2/authorize?client_id=1285116010822893579)
-2. Grant required permissions (Moderate/Kick/Ban Members, Manage Roles, Messages, Webhooks, etc.)   
-3. Visit the [Dashboard](https://runeguardian.xyz) and configure your server.
+1. [**Invite Rune Guardian**](https://runeguardian.xyz/invite)
+2. Visit the [Dashboard](https://runeguardian.xyz) and configure your server.
 
 ---
 
 ## Support & Resources
 
-* Join our [Support Server](https://discord.gg/422p3anb3T)
-* [Linktree](https://linktr.ee/Rune.gg)
-* [Status Page](https://status.bloodmoonstudios.xyz/status/rune-guardian)
+* [Links & About Us](https://runeguardian.xyz/links)
 * [Email Us](mailto:support@runeguardian.xyz)
 
 ---
